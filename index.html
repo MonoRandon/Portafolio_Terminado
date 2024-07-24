@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo2.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Presentacion de programador</title>
+    <script src="df.js"></script>
+    <style>
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card-img-top {
+            transition: transform 0.5s ease-in-out;
+        }
+        .card:hover .card-img-top {
+            transform: scale(1);
+        }
+        .collapse-horizontal {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-body-custom {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card-body-custom img {
+            max-width: 150px;
+            width: 100%;
+            height: auto;
+        }
+        .skills-section {
+            margin-top: 20px;
+        }
+        .skills-section .card {
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div id="Home" class="container-fluid">
+            <a class="navbar-brand" href="#">Bigrafia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sobre mi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#hobbie">Hobbies</a></li>
+                                <li><a class="dropdown-item" href="#habilidades">Habilidades</a></li>
+                                <li><a class="dropdown-item" href="#aspiraciones">Aspiraciones</a></li>
+                                <li><a class="dropdown-item" href="#contacto">Contactos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Comentarios">Comentarios</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br>
+
+    <div class="row g-0 bg-body-secondary position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+            <img id="img-1" src="unnamed.jpg" alt="" width="310" />
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+            <h1 class="mt-0">Hola mi Gente</h1>
+            <h4>Soy Brandon Morales, tengo 16 años y Estudio en el Liceo Arturo Matte Larrain en el Curso 3ro medio B, Este es mi Biografia, Ojala que les guste :V</h4>
+            <table style="margin: 0 auto">
+                <thead>
+                    <tr>
+                        <td>
+                            <img src="logo_insta.jpg" alt="" width="44" /><a class="bebe" href="">@randonconmodales</a>
+                            <img src="download.png" alt="" width="44" /><a class="bebe" href="mailto:brandon.morales.aguilar@alumnos.sip.cl">my.gmail</a>
+                            <img src="ddd.png" alt="" width="44" /><a class="bebe" href="https://github.com/MonoRandon/pre-Bootcamp-Publico">GitHub</a>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="clash.png" id="hobbie" class="card-img-top" alt="Clash Royale">
+                <div class="card-body">
+                    <h4 class="card-title">Hobbie 1: Clash Royale</h4>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo1" aria-expanded="false" aria-controls="collapseInfo1">Info</button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseInfo1">
+                            <div class="card card-body" style="width: 300px;">
+                                <p class="card-text">Objetivo: Destruir las torres del oponente, especialmente la torre del rey, para ganar. Cartas y Elixir: Usa un mazo de 8 cartas (tropas, hechizos, edificios) gastando elixir, que se genera con el tiempo. Campo de Batalla: Despliega tus cartas en tu mitad del campo y ataca las torres del oponente mientras defiendes las tuyas. Duración: Las partidas duran 3 minutos, con tiempo extra en caso de empate. Cofres y Mejora de Cartas: Gana partidas para obtener cofres con nuevas cartas y recursos para mejorar tu mazo. Clanes y Eventos: Únete a clanes para compartir cartas y participar en eventos especiales y guerras de clanes. En resumen, Clash Royale es un juego de estrategia en tiempo real donde construyes un mazo, gestionas el elixir y despliegas cartas para destruir las torres del oponente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVentajas1" aria-expanded="false" aria-controls="collapseVentajas1">Ventajas</button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseVentajas1">
+                            <div class="card card-body" style="width: 300px;">
+                                <p class="card-text">Jugar Clash Royale tiene varias ventajas, tanto en términos de entretenimiento como de habilidades desarrolladas. Como por Ejemplo: Desarrollo de habilidades estratégicas: Clash Royale requiere que los jugadores piensen de manera estratégica para construir mazos efectivos y tomar decisiones tácticas en tiempo real durante las batallas. Mejora de la capacidad de toma de decisiones: En el juego, debes tomar decisiones rápidas bajo presión, lo que puede ayudar a mejorar tu capacidad de tomar decisiones en situaciones de la vida real. Diversión y entretenimiento: Es un juego muy entretenido y puede ser una gran manera de pasar el tiempo, relajarte y divertirte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="basquet.jpg" class="card-img-top" alt="Basquetball">
+                <div class="card-body">
+                    <h4 class="card-title">Hobbie 2: Basquetball</h4>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo2" aria-expanded="false" aria-controls="collapseInfo2">Info</button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseInfo2">
+                            <div class="card card-body" style="width: 300px;">
+                                <p class="card-text">El baloncesto, también conocido como básquetbol, es un deporte en equipo en el que dos equipos de cinco jugadores cada uno intentan anotar puntos lanzando una pelota a través de un aro elevado. Es muy popular en todo el mundo y se juega en diversas ligas y competiciones. Aquí hay una descripción básica del juego: Objetivo: Anotar puntos lanzando la pelota a través del aro del equipo contrario. El equipo con más puntos al final del partido gana. Cancha: El baloncesto se juega en una cancha rectangular con un aro en cada extremo. Cada aro tiene un tablero y una red. Jugadores: Cada equipo tiene cinco jugadores en el campo, y cada uno tiene un rol específico, como base, escolta, alero, ala-pívot y pívot. Tiempo de juego: Los partidos se juegan en cuartos, y el tiempo varía según la liga y la categoría. Ejemplos de ligas populares incluyen la NBA (National Basketball Association) en Estados Unidos y la Euroliga en Europa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVentajas2" aria-expanded="false" aria-controls="collapseVentajas2">Ventajas</button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseVentajas2">
+                            <div class="card card-body" style="width: 300px;">
+                                <p class="card-text">El baloncesto ofrece una serie de ventajas tanto físicas como mentales. Algunas de las principales ventajas incluyen: Mejora de la condición física: Jugar al baloncesto mejora la resistencia cardiovascular, la fuerza muscular y la flexibilidad. Promueve la coordinación y el trabajo en equipo: El baloncesto requiere habilidades de coordinación mano-ojo, así como la capacidad de trabajar en equipo para lograr objetivos comunes. Fomenta la disciplina y el compromiso: La práctica regular del baloncesto ayuda a desarrollar la disciplina y el compromiso con el entrenamiento y el rendimiento en los partidos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="bici.jpg" class="card-img-top" alt="Historias">
+                <div class="card-body">
+                    <h4 class="card-title">Hobbie 3: Historias</h4>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo3" aria-expanded="false" aria-controls="collapseInfo3">Info</button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseInfo3">
+                            <div class="card card-body" style="width: 300px;">
+                                <p class="card-text">El hobby de leer o escribir historias ofrece numerosas ventajas y beneficios. Aquí hay una breve descripción: Descripción: Leer o escribir historias es una forma creativa de explorar diferentes mundos, personajes y tramas. Permite a las personas sumergirse en la imaginación y desarrollar habilidades narrativas. Beneficios: Desarrolla habilidades lingüísticas: La lectura y escritura mejoran el vocabulario, la gramática y la capacidad de expresión. Estimula la creatividad: La creación de historias permite explorar ideas nuevas y originales. Fomenta el pensamiento crítico: Leer historias ayuda a analizar tramas y personajes, mejorando el pensamiento crítico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVentajas3" aria-expanded="false" aria-controls="collapseVentajas3">Ventajas</button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseVentajas3">
+                            <div class="card card-body" style="width: 300px;">
+                                <p class="card-text">Leer o escribir historias ofrece una serie de ventajas importantes. Como por Ejemplo: Desarrolla habilidades de comunicación: La lectura y escritura de historias mejoran la capacidad de comunicar ideas de manera clara y efectiva. Aumenta la empatía: Al leer sobre personajes y situaciones diversas, se desarrolla una mayor empatía hacia los demás. Proporciona una forma de escape: Las historias pueden ofrecer una forma de escapar de la realidad y relajarse, proporcionando un respiro del estrés diario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="row">
+      <div class="col-md-8">
+          <div class="card h-100">
+              <div id="Habilidades" class="card-body-custom">
+                  <img src="R.jpg" alt="Los Tetas" class="img-fluid" style="max-width: 500px;" />
+                  <div>
+                      <h5 class="card-title">Los Tetas</h5>
+                      <p class="card-text">Los Tetas es una banda de funk chilena formada en 1994. Su estilo mezcla funk, jazz y rock, y se han convertido en una de las bandas más influyentes en la escena musical chilena. Sus álbumes incluyen "Mama Funk" y "The Head".</p>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfoTetas" aria-expanded="false" aria-controls="collapseInfoTetas">Más Información</button>
+                      <div class="collapse" id="collapseInfoTetas">
+                          <div class="card card-body">
+                              <p>Información adicional sobre la banda.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 skills-section">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Habilidades</h5>
+                  <ul>
+                      <li>Programación web (HTML, CSS)
+                          <div class="progress mt-2">
+                              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                          </div>
+                      </li>
+                      <li>Desarrollo de aplicaciones
+                          <div class="progress mt-2">
+                              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                          </div>
+                      </li>
+                      <li>Resolución de problemas
+                          <div class="progress mt-2">
+                              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card mt-3">
+              <div class="card-body">
+                  <h5 class="card-title">Materia Favorita</h5>
+                  <img src="scc.jpg" alt="Materia Favorita" style="width: 100%; height: auto;" />
+                  <p class="card-text">Mi materia favorita es la programación. Me apasiona resolver problemas complejos y crear soluciones innovadoras utilizando la tecnología.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 mt-4">
+        <div id="Aspiraciones" class="card h-100 aspirations-card">
+            <div class="card-body">
+                <h5 class="card-title">Aspiraciones</h5>
+                <p class="card-text">Mi objetivo es mejorar continuamente en mi campo de estudio y alcanzar nuevas metas profesionales. Estoy trabajando en desarrollar habilidades adicionales y explorar nuevas tecnologías para mantenerme actualizado en la industria.</p>
+            </div>
+        </div>
+    </div>
+</div>
+  
+    <br><br><br><br>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+          <div id="Comentarios" class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Comentarios</h5>
+                  <form id="commentForm">
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="name" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="comment" class="form-label">Comentario</label>
+                          <textarea class="form-control" id="comment" rows="3" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+                  <div id="notification" class="mt-3"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const notification = document.getElementById('notification');
+        notification.innerHTML = '<div class="alert alert-success">Comentario enviado exitosamente.</div>';
+        setTimeout(() => {
+            notification.innerHTML = '<div class="alert alert-info">Comentario recibido.</div>';
+        }, 3000);
+    });
+    </script>
+    
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Brandon Morales. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
